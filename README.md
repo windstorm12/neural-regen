@@ -51,4 +51,4 @@ The training code (Python/PyTorch) and the research behind the weights can be fo
 
 ## License
 **MIT License**. You are free to use this in commercial projects, modify it, and sell games made with it.
-Created by **[Your Name]**.
+Created by **Windstorm**.
