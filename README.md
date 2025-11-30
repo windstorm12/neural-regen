@@ -4,6 +4,8 @@
 
 NeuralRegen is a Godot 4 plugin that uses **Neural Cellular Automata (NCA)** running entirely on the GPU via **Compute Shaders**. It allows you to create destructible, self-healing materials with **zero CPU overhead**.
 
+![Demo GIF](https://github.com/windstorm12/neural-regen/blob/main/examples/demo.gif?raw=true)
+
 ## The Tech (Why use this?)
 Most "destructible terrain" scripts run on the CPU and kill performance. **NeuralRegen runs 100% on the GPU (RenderingDevice).**
 
@@ -36,7 +38,7 @@ You can damage the entity from any script (Bullets, Swords, Lasers) using the pu
             body.apply_damage(global_position, 5.0)
 
 ## Advanced: Hacking the Engine
-This plugin is not a "Black Box." It is an open-source foundation for GPU simulation.
+This plugin is not a "Black Box." It is an Open Source foundation for GPU simulation.
 
 *   **Want Square Damage?** Open `addons/self_healing_creature/shaders/nca.glsl` and change the distance check.
 *   **Want Faster Growth?** Tweak the `growth_speed` multiplier in `self_healing_node.gd`.
